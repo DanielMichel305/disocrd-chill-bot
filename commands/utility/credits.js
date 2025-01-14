@@ -8,8 +8,8 @@ module.exports = {
     .setDescription('Display Developer credits'),
     async execute(interaction){
         url = 'https://github.com/DanielMichel305';
-        const noEmbdLink = hideLinkEmbed(url);
-        const link = hyperlink('Daniel\'s Github', noEmbdLink);
+        //const noEmbdLink = hideLinkEmbed(url);
+        const link = hyperlink('Daniel\'s Github', url);
         await interaction.reply(
             
             `The Bot was Created By Daniel Michel, Visit ${link}.`
