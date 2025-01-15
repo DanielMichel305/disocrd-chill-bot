@@ -16,6 +16,7 @@ module.exports = {
 		if(!cooldowns.has(command.data.name)){
 			cooldowns.set(command.data.name, new Collection())
 		}
+		
 		const now = Date.now();
 		const timestamps = cooldowns.get(command.data.name);
 		const defaultCooldown = 1;
